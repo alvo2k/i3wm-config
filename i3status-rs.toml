@@ -21,11 +21,20 @@ state_path = "~/.config/watson/state"
 
 [[block]]
 block = "music"
-buttons = ["play", "next"]
-player = "rhythmbox"
+buttons = ["play"]
+player = "chromium"
 max_width = 30
 dynamic_width = true
-on_collapsed_click = "rhythmbox"
+on_collapsed_click = "google-chrome https://music.yandex.ru/"
+hide_when_empty = false
+
+[[block]]
+block = "music"
+buttons = ["play"]
+player = "Blanket"
+max_width = 30
+dynamic_width = true
+on_collapsed_click = "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blanket com.rafaelmardojai.Blanket"
 
 # [[block]]
 # block = "disk_space"
